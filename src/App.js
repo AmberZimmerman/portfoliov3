@@ -1,11 +1,19 @@
 import React from "react";
 import "./App.css";
-import PortfolioContainer from "./components/PortfolioContainer";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
+import About from "./pages/About/About";
 
 export default function App() {
   return (
-    <div>
-      <PortfolioContainer />
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<About />} />
+      </Routes>
+    </Router>
   );
 }
