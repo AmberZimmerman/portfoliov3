@@ -3,8 +3,8 @@ import "./Works.css";
 
 export default function Works({ projects }) {
   const worksStyle = {
-    backgroundColor: "black",
-    color: "white",
+    backgroundColor: "white",
+    color: "black",
     display: "flex",
     justifyContent: "center",
   };
