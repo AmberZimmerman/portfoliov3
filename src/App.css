@@ -1,0 +1,479 @@
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* .main-grid {
+  display: grid;
+  width: 100vw;
+  grid-template-areas:
+    "nav nav nav"
+    "aside content content"
+    "footer footer footer";
+} */
+
+.container {
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.hero {
+  display: flex;
+  position: relative;
+  height: fit-content;
+}
+
+i {
+  margin: 0px 1rem 0px 1rem;
+  font-size: 1.8em;
+}
+
+/* .left-hero {
+  background-color: black;
+  flex: 1 0 30%;
+} */
+
+h1 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  /* margin: 0 7; */
+  font-family: "Raleway", sans-serif;
+}
+
+.overlappy-text {
+  position: absolute;
+  top: 230px;
+  left: 200px;
+}
+
+.my-name-is {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  margin: 10px 0px;
+  height: fit-content;
+}
+
+.amber-zimmerman {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+.highlight {
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgb(250, 165, 37);
+  height: fit-content;
+  width: fit-content;
+}
+
+/* .right-hero {
+  background-color: rgb(5, 51, 53);
+  flex: 1 0 70%;
+  height: auto;
+  width: 100%;
+  flex-flow: column;
+} */
+
+/* .photo-of-self {
+  display: block;
+  height: auto;
+  width: 100%;
+} */
+
+/* nav {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 20px;
+  justify-content: space-evenly;
+}*/
+
+a {
+  align-self: center;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+}
+
+.left-about {
+  flex: 1 0 45%;
+  position: relative;
+  background-color: white;
+}
+
+.small-photo-about {
+  display: block;
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+  box-sizing: border-box;
+  position: absolute;
+  top: 53%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  box-shadow: -30px -30px rgb(5, 51, 53);
+}
+
+.right-about {
+  flex: 1 0 55%;
+}
+
+.about-header {
+  display: block;
+  padding: 40px 0 0 0;
+  width: 50%;
+  text-align: end;
+}
+
+.about-header-lowercase {
+  font-size: 25px;
+  padding: 0;
+  box-shadow: 150px 60px orange;
+}
+
+.about-header-uppercase {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.about-bio {
+  display: block;
+  padding: 0 50px;
+  font-size: 18px;
+}
+
+.resume-intro {
+  margin: 0px 0px 3rem 0px;
+  padding: 0px;
+}
+
+.education-container {
+  padding: 0px;
+  margin: 0px 0px 5rem 0px;
+}
+
+.education-container h1 {
+  text-align: left;
+  color: rgb(230, 165, 37);
+}
+
+.education-card-container {
+  display: flex;
+}
+
+.education-card {
+  flex: 1 0 320px;
+  text-align: left;
+}
+
+.education-card h3 {
+  margin: 0px;
+}
+
+.skills-container {
+  margin-bottom: 6rem;
+}
+
+.skills-container h1 {
+  text-align: left;
+  color: rgb(230, 165, 37);
+}
+
+.skills-card-container {
+  display: flex;
+}
+
+.skills-card {
+  flex: 1 0 140px;
+  margin: 0px 1.7rem 0px 0px;
+}
+
+.skills-card p {
+  font-size: 0.85rem;
+}
+
+.skills-card:nth-of-type(2n) {
+  flex: 1 0 168px;
+}
+
+.experience h1 {
+  text-align: left;
+  color: rgb(230, 165, 37);
+}
+
+.experience-card {
+  /* background: purple; */
+  margin: 0px 0px 5rem 0px;
+}
+
+.experience-card h2 {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+.experience-card h3 {
+  margin: 0px;
+  padding: 0px;
+  color: rgb(230, 165, 37);
+  font-weight: 200;
+}
+
+.experience-card h4 {
+  margin: 0px 1.8rem 0px 0px;
+  /* color: rgb(230, 165, 37); */
+  color: rgb(88, 148, 153);
+  font-weight: 100;
+}
+
+.experience-card ul {
+  margin: 1.4rem 0px 1.4rem 1.4rem;
+}
+
+.experience-card li {
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  margin: 8px 0px;
+}
+
+.soft-skills h1 {
+  color: rgb(230, 165, 37);
+}
+
+/* a red arrow shows up if I don't add the works class? */
+.works {
+  display: block;
+}
+
+.works-header {
+  text-align: center;
+  padding: 50px 0px 20px 0;
+  background-color: cadetblue;
+  color: white;
+}
+
+.works-header-uppercase {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.works-header-lowercase {
+  font-size: 25px;
+  padding: 0;
+}
+
+/* Main styling is for mobile viewing */
+.works-portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "long-card long-card"
+    "works-card2 works-card2"
+    "works-card3 works-card3"
+    "works-card4 works-card4"
+    "works-card5 works-card5";
+  background-color: cadetblue;
+}
+
+.long-card {
+  grid-area: long-card;
+  height: auto;
+  position: relative;
+  padding: 0;
+}
+
+.works-card2 {
+  grid-area: works-card2;
+  height: auto;
+  position: relative;
+  padding: 0;
+}
+
+.works-card3 {
+  grid-area: works-card3;
+  height: auto;
+  position: relative;
+  padding: 0;
+}
+
+.works-card4 {
+  grid-area: works-card4;
+  height: auto;
+  position: relative;
+  padding: 0;
+}
+
+.works-card5 {
+  grid-area: works-card5;
+  height: auto;
+  position: relative;
+  padding: 0;
+}
+
+.works-title {
+  background-color: rgb(250, 165, 37);
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  left: 10px;
+  right: 0;
+  bottom: 20px;
+}
+
+.long-img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  box-sizing: border-box;
+  padding: 0px 5px;
+}
+
+.portfolio-img {
+  max-height: 150px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 5px 0px 5px;
+}
+
+/* .resume {
+      background-color: orange;
+  } */
+
+.resume-header {
+  background-color: rgb(250, 165, 37);
+}
+
+.contact {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.contact-left {
+  background-color: black;
+  flex: 1 0 30%;
+  height: fit-content;
+  font-size: bold;
+}
+
+.contact-header {
+  padding: 20px 5px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.contact-right {
+  flex: 1 0 70%;
+}
+
+.contact-links {
+  background-color: rgb(5, 51, 53);
+  height: auto;
+  width: 100%;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 5px;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 7px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+/* This is for desktop viewing */
+@media screen and (min-width: 900px) {
+  .works-portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "long-card long-card"
+      "works-card2 works-card3"
+      "works-card4 works-card5";
+    padding: 20px 150px;
+  }
+}
+
+/* This is for smaller screen viewing */
+@media screen and (max-width: 1155px) {
+  .overlappy-text {
+    position: static;
+    padding: 5px;
+    text-align: center;
+    align-content: center;
+  }
+
+  .hero {
+    display: flex;
+    position: relative;
+    flex-flow: column wrap;
+  }
+
+  .highlight {
+    display: inline-block;
+  }
+
+  #contact {
+    display: flex;
+    position: relative;
+    flex-flow: column wrap;
+  }
+}
+
+@media screen and (max-width: 900) {
+  .about {
+    display: flex;
+    position: relative;
+    flex-flow: column wrap;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .left-about {
+    display: none;
+    flex: 1 0 45%;
+    background-color: white;
+  }
+
+  .small-photo-about {
+    display: none;
+    width: auto;
+    object-fit: cover;
+    box-sizing: border-box;
+    top: 53%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    box-shadow: -30px -30px rgb(5, 51, 53);
+  }
+}
